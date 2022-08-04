@@ -33,7 +33,7 @@ function Footer() {
       <div className="container">
         <div className={style.link_wrpper}>
           {links.map((el) => (
-            <a key={el.link} href={el.link} target="_blank">
+            <a rel="noreferrer" key={el.link} href={el.link} target="_blank">
               <Icon
                 icon={el.icon}
                 className={`color-deep-gray ${style.icon}`}
@@ -41,7 +41,9 @@ function Footer() {
             </a>
           ))}
         </div>
-        <p className={`color-deep-gray mb-0 small d-flex align-items-center justify-content-center ${style.copy_writte_text}`}>
+        <p
+          className={`color-deep-gray mb-0 small d-flex align-items-center justify-content-center ${style.copy_writte_text}`}
+        >
           <span>© Harmony 2022 </span>
           <span className={style.dot}> .</span> <span>hello@harmony.one</span>
         </p>
